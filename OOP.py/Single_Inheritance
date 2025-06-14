@@ -1,0 +1,20 @@
+# Single Inheritance (One Parent, One Child)
+# The child class inherits from a single parent class.
+
+# Just like a son inheriting his dad’s surname.
+
+# Example:
+
+class Parent:  
+    def home(self):  
+        print("This is my house")  
+
+class Child(Parent):  
+    def bike(self):  
+        print("I have a bike")  
+
+c = Child()  
+c.home()  # Inherited from Parent  
+c.bike()  # Own method  
+# ✅ The child inherits the home() function from the parent!
+

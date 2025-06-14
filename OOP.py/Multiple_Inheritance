@@ -1,0 +1,24 @@
+# Multiple Inheritance (One Child, Two Parents)
+# The child class gets features from two parents.
+
+# Just like a kid getting features from both mom and dad!
+
+# Example:
+
+class Mom:  
+    def cooking(self):  
+        print("Mom can cook")  
+
+class Dad:  
+    def driving(self):  
+        print("Dad can drive")  
+
+class Child(Mom, Dad):  
+    def playing(self):  
+        print("I can play")  
+
+c = Child()  
+c.cooking()  # From Mom  
+c.driving()  # From Dad  
+c.playing()  # Own method  
+# ✅ The child inherits from both Mom and Dad!

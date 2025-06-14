@@ -1,0 +1,25 @@
+# Multilevel Inheritance (Grandpa → Dad → Son)
+# A child inherits from a parent, and then another child inherits from that child!
+
+# Like Grandfather → Father → Son.
+
+# Example:
+
+class Grandpa:  
+    def wisdom(self):  
+        print("I have experience")  
+
+class Dad(Grandpa):  
+    def work(self):  
+        print("I have a job")  
+
+class Son(Dad):  
+    def gaming(self):  
+        print("I love gaming")  
+
+s = Son()  
+s.wisdom()  # Inherited from Grandpa  
+s.work()    # Inherited from Dad  
+s.gaming()  # Own method  
+# ✅ Son inherits from Dad, and Dad inherits from Grandpa!
+
